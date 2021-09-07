@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="Test"/>
+        <attribute name="authors" value="hannes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-05 04:20:19 PM"/>
+        <attribute name="created" value="aGFubmVzO01PTVMtU1BBR0hFVFRJOzIwMjEtMDktMDU7MDQ6MTM6NDQgUE07Mjk1OA=="/>
+        <attribute name="edited" value="aGFubmVzO01PTVMtU1BBR0hFVFRJOzIwMjEtMDktMDU7MDQ6MjA6MTkgUE07MTszMDY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="Kala" type="Integer" variable="vaartus">
+        <parameters>
+            <parameter name="vaartus" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <if expression="vaartus &gt; 5">
+                <then>
+                    <assign variable="vaartus" expression="vaartus - 5"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="vaartus &lt;= 5">
+                <then>
+                    <assign variable="vaartus" expression="vaartus + 5"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
