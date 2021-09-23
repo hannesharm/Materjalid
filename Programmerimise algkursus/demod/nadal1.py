@@ -9,6 +9,9 @@ print('-------')
 # Muutujatele sõnalise (String) väärtuse omistamine
 nimi = 'Hannes'
 perenimi = 'Härm'
+lause = 'Maja on roheline'
+lause2 = "Maja on roheline"
+
 taisnimi = nimi + perenimi
 print(taisnimi)
 
