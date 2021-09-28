@@ -2,16 +2,14 @@
 Check if given ID code is valid.
 """
 
-def get_full_year(gender_identifier: str, year_identifier: str) -> int:
+def get_full_date(id_code: str) -> str:
     """
-    Define the 4-digit year when given person was born.
-    Person gender and year numbers from ID code must help.
-    Given year has only two last digits.
+    Find a full date from given id code.
+    Return date with format: dd.mm.yyyy (ex: 28.09.2021)
     """
-    return 9999
+    return '28.09.2021'
 
-
-def get_birth_place(birth_identifier: str) -> str:
+def get_birth_place(id_code: str) -> str:
     """
     Find the place where the person was born.
     Place identifiers:
@@ -53,7 +51,7 @@ def is_id_valid(id_code: str) -> bool:
     return False
 
 
-def get_gender(gender_identifier: str) -> str:
+def get_gender(id_code: str) -> str:
     """Return a gender based on the gender identifier."""
     return "undefined"
 
@@ -67,15 +65,16 @@ def get_data_from_id(id_code: str) -> str:
     if not is_id_valid(id_code):
         return "Given invalid ID code!"
     else:
-        gender = get_gender(id_code[0])
-        birth_place = get_birth_place(id_code[7:10])
-        full_year = get_full_year(id_code[0], id_code[1:3])
-        month = id_code[3:5]
-        day = id_code[5:7]
-        full_date = day + "." + month + "." + str(full_year)
+        gender = get_gender(id_code)
+        birth_place = get_birth_place(id_code)
+        full_date = get_full_date(id_code)
         message = f"This is a {gender} born on {full_date} in {birth_place}."
         return message
 
+
+'''
+When defending, explain, why one should use this if clause in main script.
+'''
 if __name__ == '__main__':
     id_codes = [
         "43108224720",

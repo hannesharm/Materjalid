@@ -49,7 +49,3 @@ if (isFloat(num2)):
     print('The area is ' + str(round(area, 2)) + ' cm^2')
 else:
     print("ei ole number")
-
-
-
-print([*range(1,10), *range(21, 30)])
