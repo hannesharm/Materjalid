@@ -8,7 +8,7 @@ def get_from_list(l: list, i: int) -> str|None:
 
 def get_rows() -> list:
     result = []
-    with open('sample2.csv') as f:
+    with open('sample1.csv') as f:
         lines = f.readlines()
         for line in lines:
             parts = line.split(",")
