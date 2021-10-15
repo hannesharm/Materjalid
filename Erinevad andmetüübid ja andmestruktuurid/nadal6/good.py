@@ -2,14 +2,14 @@ from __future__ import annotations
 
 class Row:
 
+    amount: float = 0
+    price: float = 0
+    name: str = None
+
     def __init__(self, amount: float, price: float, name: str):
         self.amount = amount
         self.price = price
         self.name = name
-
-    amount: float = 0
-    price: float = 0
-    name: str = None
 
     def get_total(self):
         return self.price * self.amount
@@ -41,6 +41,8 @@ def calculate_total(items: list) -> float:
     return sum(item.get_total() for item in items)
 
 items = get_rows()
+print(items)
+print('-----------------------------------')
 print("Calculating total...")
 print("total:", calculate_total(items))
 

@@ -1,10 +1,9 @@
-tuples
-functions
-for loops - range
-while loops
-open file
-write to file
-string explode
-open csv files
+kordamine
+Stringid, numbrid, booleanid, listid, sõnastikud
+for loops
+funktsioonid
 
-nadal7 - csv lugemine objektidega
+1. Tehted numbritega
+ a. import math vs **
+
+

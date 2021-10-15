@@ -13,7 +13,7 @@ def get_rows() -> list:
         for line in lines:
             parts = line.split(",")
 
-            row = [get_from_list(parts, 0), get_from_list(parts, 1), get_from_list(parts, 2)]
+            row = [get_from_list(parts, 0), get_from_list(parts, 1), get_from_list(parts, 2),  get_from_list(parts, 3)]
 
             print("got row:", row)
 
@@ -24,10 +24,11 @@ def get_rows() -> list:
 def calculate_total(items: list) -> float:
     total = 0
     for item in items:
-        total += float(item[0]) * float(item[1])
+        total += float(item[1]) * float(item[2])
     return total
 
 items = get_rows()
+print(items)
 print("Calculating total...")
 print("total:", calculate_total(items))
 

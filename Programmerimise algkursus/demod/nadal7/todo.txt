@@ -1,8 +1,10 @@
-objektid
-väljad
-konstruktorid
+tuples
+functions
+for loops - range
+while loops
+open file
+write to file
+string explode
+open csv files
 
-faili lugemine
-for loops
-
-objektide meetodid?
+nadal7 - csv lugemine objektidega

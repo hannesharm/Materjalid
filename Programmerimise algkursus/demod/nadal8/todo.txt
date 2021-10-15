@@ -1,0 +1,8 @@
+objektid
+väljad
+konstruktorid
+
+faili lugemine
+for loops
+
+objektide meetodid?

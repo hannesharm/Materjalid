@@ -1,0 +1,5 @@
+Polymorphism ülesanne
+Panen tahvlile listi elusolenditest
+    nt erinevad puud, inimesed, loomad, nt koerad, kassid,
+    Peavad tekitama sugupuu, mismoodi mingi olend on omavahel seotud, nt husky on koer, kask on puu, puu on elusolend, koer on elusolend jne
+
