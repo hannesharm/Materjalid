@@ -5,16 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
         Dog germanShepherd = new Dog(48, 35, "German Shepherd");
-        Dog greyHound = new Dog(72, 33, "Greyhound.");
-        Human english = new Human(13, 80, "English", "English");
+        Dog greyHound = new Dog(72, 33, "Greyhound");
+        Human human = new Human(13, 80, "english");
 
-        greyHound.bark();
         germanShepherd.bark();
-        english.talk();
+        human.talk();
 
-        greyHound.whatAmI();
-        english.whatAmI();
-        germanShepherd.whatAmI();
-
+        greyHound.eat();
+        human.eat();
     }
 }

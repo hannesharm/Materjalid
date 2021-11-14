@@ -15,11 +15,11 @@ def getCarCount(cars):
 
 #sisendi ja väljundi näitamine funktsioonides:
 def get_person_count(persons: list) -> int:
-    return 0
+    return len(persons)
 
 def sum_of_names(name1: str, name2: str) -> str:
     return name1 + name2
 
 def get_car_count(cars: list) -> int:
-    return 4
+    return len(cars)
 

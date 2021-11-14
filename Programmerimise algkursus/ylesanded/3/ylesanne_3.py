@@ -18,7 +18,12 @@ def count(a):
         's': 1
     }
     """
-    return {'k': 2, 'a': 1, 'u': 1, 's': 2}
+    result = {}
+    # do somenthing
+
+    result = {'k': 2, 'a': 1, 'u': 1, 's': 2}
+    return result
+
 
 a = input("sisesta lause")
 

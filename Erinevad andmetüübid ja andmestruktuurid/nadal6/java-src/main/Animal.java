@@ -15,20 +15,12 @@ public abstract class Animal {
         this.breedName = breedName;
     }
 
-    public void whatAmI() {
-        System.out.printf("I am a %s!\n", breedName);
-    }
-
     public void run() {
         System.out.printf("Running with speed of %f km/h\n", maxRunningSpeed);
     }
 
     public void eat() {
+        System.out.println("Eating!");
         hasEaten = true;
     }
-
-    public void howManyLegsDoIHave() {
-        System.out.printf("I have %s legs!\n", numberOfLegs);
-    }
-
 }

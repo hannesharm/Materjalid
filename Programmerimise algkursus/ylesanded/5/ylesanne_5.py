@@ -1,40 +1,35 @@
 """
-Given a csv file of city names and their state codes,
-script must be able to write 2 new files based on the given file:
-    first file: first column is the code, second column is the number of cities with that code;
-    second file: first column is the city name, second column is the number of letters in that city name.
+Printida välja info iga isikukoodi kohta.
+Kui isikukood ei ole korras:
+    Kui pikkus on paigast ära: tagasta "Pikkus ei ole õige!"
+    Kui isikukoodis muid asju kui numbrid: tagasta "Isikukoodis võib olla ainult numbreid!"
+    Kui kuupäeva ei eksisteeri näiteks on märgitud 35 päev või 14. kuu või 29 veebruar 2019: tagasta "Isikukoodi kuupäev ei ole korrektne!"
+Kui isikukood on korras:
+    Tagasta kuupäev stringina sellises formaadis: dd-mm-yyyy
+                                               nt 03-05-1999
 
-input file exaple:
-    Youngstown, OH
-    Wilmington, NC
-    Waterloo, IA
-    Victoria, TX
-    Tyler, TX
-    Texarkana, TX
-    Springfield, OH
-    Sioux City, IA
-    Schenectady, NY
-    Santa Barbara, CA
-    Ravenna, OH
-
-first file exaple:
-    OH, 3
-    NC, 1
-    IA, 2
-    TX, 3
-    NY, 1
-    CA, 1
-
-second file example:
-    Youngstown, 10
-    Wilmington, 10
-    Waterloo, 8
-    Victoria, 8
-    Tyler, 5
-    Texarkana, 9
-    Springfield, 11
-    Sioux City, 10
-    Schenectady, 11
-    Santa Barbara, 13
-    Ravenna, 7
 """
+
+
+def get_info(code: str) -> str:
+    ##TODO code here!
+    return "Isikukoodis võib olla ainult numbreid!"
+
+
+if __name__ == '__main__':
+    id_codes = [
+        "43108224720",
+        "4360812523",
+        "32605022755",
+        "61106064780",
+        "4720807276a",
+        "42605150146",
+        "382050247",
+        "42404123759",
+        "45905232713442d",
+        "39412304990",
+        "389092049622"
+    ]
+
+    for id_code in id_codes:
+        print(get_info(id_code))
