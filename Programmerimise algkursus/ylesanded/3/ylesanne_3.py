@@ -1,15 +1,13 @@
 def count(a):
     """
-    TODO: enne lahendamist
-    Vaata läbi video
+    enne lahendamist soovitatavalt vaata läbi video
     https://www.youtube.com/watch?v=OnDr4J2UXSA
     Kui ei saa aru, vaata teisi videoid/loe dokumentatsiooni vms.
 
-    TODO count all letters in parameter a
-    Put each found letter into dictionary
-    as key and value must be the amount of letters found
+    TODO: loe kokku kõik tähed, kui palju neid on etteantud sõnas.
+    Tagasta tulemus sõnastikuna. Näide allpool
 
-    Example: "kalamaja majas" =>
+    Näide: "kalamaja majas" =>
     {
         'k': 1,
         'a': 6,
@@ -18,11 +16,10 @@ def count(a):
         's': 1
     }
     """
-    result = {}
-    # do somenthing
 
-    result = {'k': 2, 'a': 1, 'u': 1, 's': 2}
-    return result
+    # TODO: lahendus siia!
+
+    return {'k': 1, 'a': 6, 'l': 1, 'm': 2, 's': 1}
 
 
 a = input("sisesta lause")

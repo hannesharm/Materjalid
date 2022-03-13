@@ -1,11 +1,11 @@
 shape = input('Please insert geometric shape:')
 
-if (shape == "circle"):
+if shape == "circle":
     radius = float(input("Please insert radius in cm:"))
     area = 3.14 * radius ** 2
     print('The area is ' + str(round(area, 2)) + ' cm^2')
 
-elif (shape == 'square'):
+elif shape == 'square':
     side = float(input("Please insert side length in cm:"))
     #TODO:
 

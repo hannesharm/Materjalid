@@ -12,9 +12,14 @@ Kui isikukood on korras:
 
 
 def get_info(code: str) -> str:
-    ##TODO code here!
+    if len(code) != 11:
+        ## tagastad teate, et ei ole õige pikkusega
+        pass
+    ##TODO lahendus tuleb siia!
     return "Isikukoodis võib olla ainult numbreid!"
 
+print("this is ylesanne5.py file")
+print("__name__ in ylesanne5.py " + __name__)
 
 if __name__ == '__main__':
     id_codes = [

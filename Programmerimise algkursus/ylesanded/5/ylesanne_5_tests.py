@@ -25,6 +25,8 @@ invalid_date = "Isikukoodi kuupäev ei ole korrektne!"
 def test_only_numbers():
     assert task.get_info("a") in (only_numbers, length_invalid)
     assert task.get_info("aaaaaaaaaaa") == only_numbers
+    assert task.get_info("-1234567890") == only_numbers
+    assert task.get_info("1234.567890") == only_numbers
     for i in range(1000):
         code = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(11))
         assert task.get_info(code) == only_numbers
@@ -42,6 +44,8 @@ def test_length():
 
 def test_date():
     assert task.get_info("39909400000") == invalid_date
+    assert task.get_info("39909300000") != invalid_date
+    assert task.get_info("50002290000") != invalid_date
 
     for i in range(1000):
         date = get_random_date()

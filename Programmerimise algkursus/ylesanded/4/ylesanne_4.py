@@ -4,17 +4,16 @@
 Genereerib dictionary kahe listi põhjal
 Võtab esimesest listist võtmed,
 teisest listist väärtused
+Kui etteantud listid on eripikkusega, siis tagastab tühja sõnastiku.
 """
 
 
 def create_dict(a: list, b: list) -> dict:
-    result = {'a': 1, 'b': 2}  # create dictionary based on input here
-    # if lists are not of same length, return empty dict.
+    if len(a) != len(b):
+        return {}
+    ###
+    return {}
 
-
-
-    ## return result
-    return result
 
 
 l1 = [1, 3, 5]

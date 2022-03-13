@@ -35,6 +35,5 @@ public class Main {
     public class EngineDisplacement {
         int size;
         String unit;
-
     }
 }
